@@ -1,0 +1,107 @@
+/* set the default style of body */
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+/* set the font size and line-height of paragraph and heading element */
+p{
+    line-height: 1.5;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.375rem;
+}
+h4{
+    font-size: 1.125rem;
+}
+h1,h2,h3,h4{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+/* end of styling of heading and body */
+/* give attraction to any element you want */
+span{
+    color: hsl(206, 71%, 36%);
+}
+/* design links like a beautiful button */
+a.button{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(27, 100, 157);
+    color: white;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    /* to make like 3d object */
+    box-shadow: inset 0 2px 5px 0 rgb(9, 35, 54), inset 0 -2px 5px 0 rgb(9, 35, 54);
+    
+}
+/* set some default padding to the parent element so that all content are aligned horizontal and give some vertical space*/
+.container{
+    padding: 0.625rem 1.25rem;
+}
+/* for getting two element side by side */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* set the element half equal width */
+.half{
+    width: 50%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/* design of recipies areas top content */
+.content{
+    text-align: justify;
+}
+.content h2{
+    text-align: center;
+}
+/* set the card parent for getting a good control on cards */
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.25rem 0;
+}
+/* design of card and status box */
+.card,.status-box{
+    width: 30%;
+    box-shadow: 3px 5px 15px 0 rgba(0, 0, 0, .6);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.status-box{
+    width: auto;
+    line-height: inherit;
+    text-align: center;
+}
+/* give space around our status box by targeting second status box and push other element both side */
+.status-box:nth-of-type(2){
+    margin: 0 1.875rem;
+}
+/* reduce white space between status number and description */
+.status-box p{
+    margin: 0;
+}
+footer{
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+/* remove whitespace between header and footer */
+footer h2,p{
+    margin: 0;
+}
